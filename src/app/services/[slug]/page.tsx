@@ -181,11 +181,11 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
                   <div className="space-y-4">
                     <a href="tel:+33123456789" className="flex items-center space-x-3 text-neutral-700 hover:text-primary-600 transition-colors">
                       <Phone className="w-5 h-5" />
-                      <span>+33 1 23 45 67 89</span>
+                    <span>+225 07 07 99 48 59</span>
                     </a>
                     <a href="mailto:contact@nkco.fr" className="flex items-center space-x-3 text-neutral-700 hover:text-primary-600 transition-colors">
                       <Mail className="w-5 h-5" />
-                      <span>contact@nkco.fr</span>
+                      <span>contact@nkco.pro</span>
                     </a>
                   </div>
                 </div>
