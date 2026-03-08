@@ -1,0 +1,116 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Appointment {
+  id          String            @id @default(cuid())
+  
+  // Informations client
+  firstName   String
+  lastName    String
+  email       String
+  phone       String
+  company     String?
+  
+  // Détails du rendez-vous
+  service     ServiceType
+  clientType  ClientType
+  message     String?
+  
+  // Date et heure
+  date        DateTime
+  timeSlot    String
+  
+  // Statut
+  status      AppointmentStatus @default(PENDING)
+  
+  // Notes admin
+  adminNotes  String?
+  
+  // Timestamps
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  
+  @@index([date])
+  @@index([status])
+  @@index([email])
+}
+
+model BlogPost {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  excerpt     String
+  content     String
+  coverImage  String?
+  author      String
+  published   Boolean  @default(false)
+  publishedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([slug])
+  @@index([published])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  
+  @@index([read])
+  @@index([createdAt])
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+enum ServiceType {
+  FINANCEMENT
+  INVESTISSEMENT
+  COMMERCE
+  IMMOBILIER_PRINCIPAL
+  IMMOBILIER_SECONDAIRE
+  IMMOBILIER_LOCATIF
+  ORGANISATION
+  STRATEGIE
+}
+
+enum ClientType {
+  PME
+  SALARIE
+  FONCTIONNAIRE
+  COMMERCANT
+}
+
+enum AppointmentStatus {
+  PENDING
+  CONFIRMED
+  RESCHEDULED
+  CANCELLED
+  COMPLETED
+}
