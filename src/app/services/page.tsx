@@ -1,10 +1,11 @@
 import { services } from '@/data/services'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export const metadata = {
   title: 'Nos Services | NK&Co',
-  description: 'Découvrez l\'ensemble de nos services : financement, investissement, immobilier, conseil stratégique',
+  description: "Découvrez l'ensemble de nos services : financement, investissement, immobilier, conseil stratégique",
 }
 
 export default function ServicesPage() {
@@ -27,15 +28,15 @@ export default function ServicesPage() {
         <div className="container-custom">
           <div className="space-y-24">
             {services.map((service, index) => (
-              <div 
-                key={service.id} 
+              <div
+                key={service.id}
                 id={service.id}
                 className="scroll-mt-24"
               >
-                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
                   {/* Content */}
                   <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <div className="text-6xl mb-6">{service.icon}</div>
+                    <div className="text-5xl mb-4">{service.icon}</div>
                     <h2 className="font-display text-4xl font-bold text-neutral-900 mb-6">
                       {service.title}
                     </h2>
@@ -64,7 +65,7 @@ export default function ServicesPage() {
                       <div className="grid sm:grid-cols-2 gap-4">
                         {service.benefits.map((benefit, i) => (
                           <div key={i} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
+                            <div className="w-2 h-2 bg-primary-600 rounded-full flex-shrink-0" />
                             <span className="text-neutral-700 font-medium">{benefit}</span>
                           </div>
                         ))}
@@ -74,9 +75,9 @@ export default function ServicesPage() {
                     <div className="flex flex-wrap gap-3 mb-8">
                       <span className="text-sm font-semibold text-neutral-600">Pour :</span>
                       {service.targetClients.map((client) => (
-                        <span 
+                        <span
                           key={client}
-                          className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full font-medium"
+                          className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full font-medium text-sm"
                         >
                           {client}
                         </span>
@@ -89,16 +90,29 @@ export default function ServicesPage() {
                     </Link>
                   </div>
 
-                  {/* Image placeholder */}
+                  {/* Image */}
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                    <div className="aspect-square bg-gradient-to-br from-primary-100 to-accent-100 rounded-3xl flex items-center justify-center text-8xl">
-                      {service.icon}
+                    <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+                      <Image
+                        src={service.image}
+                        alt={service.imageAlt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                      {/* Decorative badge */}
+                      <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-3 shadow-lg flex items-center space-x-3">
+                        <span className="text-3xl">{service.icon}</span>
+                        <span className="font-bold text-neutral-800 text-sm">
+                          {service.title}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {index < services.length - 1 && (
-                  <div className="border-t border-neutral-200 mt-24"></div>
+                  <div className="border-t border-neutral-200 mt-24" />
                 )}
               </div>
             ))}
@@ -115,7 +129,10 @@ export default function ServicesPage() {
           <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
             Nos experts sont à votre disposition pour étudier votre projet et vous proposer les meilleures solutions
           </p>
-          <Link href="/rendez-vous" className="btn-secondary inline-flex items-center bg-white text-primary-700 hover:bg-primary-50">
+          <Link
+            href="/rendez-vous"
+            className="btn-secondary inline-flex items-center bg-white text-primary-700 hover:bg-primary-50"
+          >
             Prendre rendez-vous
             <ArrowRight className="ml-2 w-5 h-5" />
           </Link>

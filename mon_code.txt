@@ -1,0 +1,3004 @@
+
+====== src/app/a-propos/page.tsx ======
+import Link from 'next/link'
+import { ArrowRight, Target, Users, TrendingUp, Award, Shield, Heart } from 'lucide-react'
+
+export const metadata = {
+  title: 'À propos | NK&Co',
+  description: 'Découvrez NK&Co, votre partenaire de confiance en conseil financier et investissement depuis plus de 15 ans',
+}
+
+export default function AProposPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+        <div className="container-custom text-center">
+          <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
+            À propos de NK&Co
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+            Votre partenaire de confiance pour concrétiser vos projets financiers depuis 2009
+          </p>
+        </div>
+      </section>
+
+      {/* Notre Histoire */}
+      <section className="section-padding">
+        <div className="container-custom max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-4xl font-bold text-neutral-900 mb-6">
+              Notre Histoire
+            </h2>
+            <div className="w-20 h-1 bg-primary-600 mx-auto mb-8"></div>
+          </div>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="text-xl text-neutral-700 leading-relaxed mb-6">
+              Fondée en 2009, <strong>NK&Co</strong> est née d'une conviction simple : chacun mérite 
+              d'avoir accès à un conseil financier de qualité, personnalisé et transparent.
+            </p>
+            
+            <p className="text-lg text-neutral-600 leading-relaxed mb-6">
+              Au fil des années, nous avons accompagné plus de <strong>500 clients</strong> dans 
+              la réalisation de leurs projets, qu'il s'agisse d'acquisition immobilière, de 
+              développement d'entreprise ou d'optimisation patrimoniale.
+            </p>
+
+            <p className="text-lg text-neutral-600 leading-relaxed">
+              Notre expertise couvre l'ensemble des besoins en <strong>financement</strong>, 
+              <strong> investissement</strong> et <strong>conseil stratégique</strong>, 
+              permettant à nos clients de bénéficier d'un accompagnement complet et cohérent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Nos Valeurs */}
+      <section className="section-padding bg-neutral-50">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-4xl font-bold text-neutral-900 mb-6">
+              Nos Valeurs
+            </h2>
+            <div className="w-20 h-1 bg-primary-600 mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="card text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                Confiance
+              </h3>
+              <p className="text-neutral-600">
+                La transparence et l'honnêteté sont au cœur de notre relation avec nos clients. 
+                Nous construisons des partenariats durables basés sur la confiance mutuelle.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Heart className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                Engagement
+              </h3>
+              <p className="text-neutral-600">
+                Nous nous engageons pleinement dans chaque projet, de la première consultation 
+                jusqu'à la réalisation complète de vos objectifs.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Award className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                Excellence
+              </h3>
+              <p className="text-neutral-600">
+                Nous visons l'excellence dans chaque aspect de notre service, en restant 
+                constamment à jour sur les évolutions du marché et de la réglementation.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                Proximité
+              </h3>
+              <p className="text-neutral-600">
+                Chaque client est unique. Nous prenons le temps de comprendre votre situation 
+                et vos aspirations pour vous offrir un service personnalisé.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <TrendingUp className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                Performance
+              </h3>
+              <p className="text-neutral-600">
+                Avec un taux de réussite de 95%, nous mettons notre expertise au service de 
+                vos objectifs pour obtenir les meilleurs résultats possibles.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-700 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                Adaptabilité
+              </h3>
+              <p className="text-neutral-600">
+                Nous nous adaptons à votre situation spécifique et proposons des solutions 
+                sur-mesure qui correspondent réellement à vos besoins.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Notre Expertise */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-display text-4xl font-bold text-neutral-900 mb-6">
+                Une Expertise Reconnue
+              </h2>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary-600">15+</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Années d'expérience</h3>
+                    <p className="text-neutral-600">
+                      Plus de 15 ans à accompagner nos clients dans leurs projets les plus importants
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary-600">500+</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Clients satisfaits</h3>
+                    <p className="text-neutral-600">
+                      Des particuliers, PME et professionnels qui nous font confiance
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary-600">10M€</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Financements obtenus</h3>
+                    <p className="text-neutral-600">
+                      Des millions d'euros de financements négociés pour nos clients
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary-600">95%</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Taux de réussite</h3>
+                    <p className="text-neutral-600">
+                      Un taux de réussite exceptionnel grâce à notre expertise et notre réseau
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-3xl p-12 text-white">
+              <h3 className="font-display text-3xl font-bold mb-6">
+                Notre Mission
+              </h3>
+              <p className="text-xl text-primary-100 mb-6">
+                Rendre le conseil financier accessible à tous en offrant un accompagnement 
+                personnalisé, transparent et efficace.
+              </p>
+              <p className="text-lg text-primary-100 mb-8">
+                Nous croyons que chaque projet mérite une attention particulière et des 
+                solutions adaptées. C'est pourquoi nous mettons notre expertise et notre 
+                réseau au service de votre réussite.
+              </p>
+              <Link href="/rendez-vous" className="inline-flex items-center bg-white text-primary-700 font-bold px-6 py-3 rounded-lg hover:bg-primary-50 transition-all">
+                Discutons de votre projet
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-gradient-to-br from-accent-600 to-accent-800 text-white">
+        <div className="container-custom text-center">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            Prêt à démarrer votre projet ?
+          </h2>
+          <p className="text-xl mb-8 text-accent-100 max-w-2xl mx-auto">
+            Rencontrons-nous pour un premier échange gratuit et sans engagement
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/rendez-vous" className="btn-secondary bg-white text-accent-700 hover:bg-accent-50">
+              Prendre rendez-vous
+              <ArrowRight className="inline ml-2 w-5 h-5" />
+            </Link>
+            <Link href="/contact" className="btn-outline border-white text-white hover:bg-white/10">
+              Nous contacter
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+====== src/app/admin/dashboard/page.tsx ======
+'use client'
+
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { Calendar, Users, Clock, TrendingUp, CheckCircle2, XCircle, AlertCircle } from 'lucide-react'
+
+interface DashboardStats {
+  totalAppointments: number
+  pendingAppointments: number
+  confirmedAppointments: number
+  todayAppointments: number
+  weekAppointments: number
+  monthAppointments: number
+}
+
+export default function AdminDashboard() {
+  const [stats, setStats] = useState<DashboardStats>({
+    totalAppointments: 0,
+    pendingAppointments: 0,
+    confirmedAppointments: 0,
+    todayAppointments: 0,
+    weekAppointments: 0,
+    monthAppointments: 0,
+  })
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    // Simuler le chargement des stats
+    // À remplacer par un vrai appel API
+    setTimeout(() => {
+      setStats({
+        totalAppointments: 156,
+        pendingAppointments: 12,
+        confirmedAppointments: 98,
+        todayAppointments: 5,
+        weekAppointments: 23,
+        monthAppointments: 67,
+      })
+      setLoading(false)
+    }, 1000)
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-neutral-50 flex items-center justify-center">
+        <div className="loader"></div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen bg-neutral-50">
+      {/* Header */}
+      <div className="bg-white border-b">
+        <div className="container-custom py-6">
+          <h1 className="font-display text-3xl font-bold text-neutral-900">
+            Dashboard Administrateur
+          </h1>
+          <p className="text-neutral-600 mt-2">
+            Vue d'ensemble de votre activité
+          </p>
+        </div>
+      </div>
+
+      <div className="container-custom py-8">
+        {/* Stats Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="card border-l-4 border-primary-600">
+            <div className="flex items-center justify-between mb-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                <Calendar className="w-6 h-6 text-primary-600" />
+              </div>
+              <span className="text-2xl font-bold text-neutral-900">
+                {stats.totalAppointments}
+              </span>
+            </div>
+            <div className="text-sm text-neutral-600 font-medium">Total RDV</div>
+          </div>
+
+          <div className="card border-l-4 border-yellow-500">
+            <div className="flex items-center justify-between mb-4">
+              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                <Clock className="w-6 h-6 text-yellow-600" />
+              </div>
+              <span className="text-2xl font-bold text-neutral-900">
+                {stats.pendingAppointments}
+              </span>
+            </div>
+            <div className="text-sm text-neutral-600 font-medium">En attente</div>
+          </div>
+
+          <div className="card border-l-4 border-green-500">
+            <div className="flex items-center justify-between mb-4">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <CheckCircle2 className="w-6 h-6 text-green-600" />
+              </div>
+              <span className="text-2xl font-bold text-neutral-900">
+                {stats.confirmedAppointments}
+              </span>
+            </div>
+            <div className="text-sm text-neutral-600 font-medium">Confirmés</div>
+          </div>
+
+          <div className="card border-l-4 border-accent-600">
+            <div className="flex items-center justify-between mb-4">
+              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-accent-600" />
+              </div>
+              <span className="text-2xl font-bold text-neutral-900">
+                {stats.todayAppointments}
+              </span>
+            </div>
+            <div className="text-sm text-neutral-600 font-medium">Aujourd'hui</div>
+          </div>
+        </div>
+
+        {/* Quick Stats */}
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="card">
+            <h3 className="font-semibold text-lg mb-4">Cette semaine</h3>
+            <div className="text-3xl font-bold text-primary-600 mb-2">
+              {stats.weekAppointments}
+            </div>
+            <p className="text-sm text-neutral-600">rendez-vous programmés</p>
+          </div>
+
+          <div className="card">
+            <h3 className="font-semibold text-lg mb-4">Ce mois</h3>
+            <div className="text-3xl font-bold text-primary-600 mb-2">
+              {stats.monthAppointments}
+            </div>
+            <p className="text-sm text-neutral-600">rendez-vous programmés</p>
+          </div>
+
+          <div className="card">
+            <h3 className="font-semibold text-lg mb-4">Taux de confirmation</h3>
+            <div className="text-3xl font-bold text-green-600 mb-2">
+              {((stats.confirmedAppointments / stats.totalAppointments) * 100).toFixed(0)}%
+            </div>
+            <p className="text-sm text-neutral-600">des demandes acceptées</p>
+          </div>
+        </div>
+
+        {/* Actions rapides */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="card">
+            <h3 className="font-semibold text-xl mb-6">Actions rapides</h3>
+            <div className="space-y-4">
+              <Link 
+                href="/admin/rendez-vous?status=pending"
+                className="flex items-center justify-between p-4 bg-yellow-50 hover:bg-yellow-100 rounded-lg transition-colors"
+              >
+                <div className="flex items-center space-x-3">
+                  <AlertCircle className="w-5 h-5 text-yellow-600" />
+                  <span className="font-medium">RDV en attente</span>
+                </div>
+                <span className="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                  {stats.pendingAppointments}
+                </span>
+              </Link>
+
+              <Link 
+                href="/admin/rendez-vous?date=today"
+                className="flex items-center justify-between p-4 bg-primary-50 hover:bg-primary-100 rounded-lg transition-colors"
+              >
+                <div className="flex items-center space-x-3">
+                  <Calendar className="w-5 h-5 text-primary-600" />
+                  <span className="font-medium">RDV aujourd'hui</span>
+                </div>
+                <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                  {stats.todayAppointments}
+                </span>
+              </Link>
+
+              <Link 
+                href="/admin/rendez-vous"
+                className="flex items-center justify-between p-4 bg-neutral-50 hover:bg-neutral-100 rounded-lg transition-colors"
+              >
+                <div className="flex items-center space-x-3">
+                  <Users className="w-5 h-5 text-neutral-600" />
+                  <span className="font-medium">Tous les rendez-vous</span>
+                </div>
+                <span className="text-neutral-600">→</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="card">
+            <h3 className="font-semibold text-xl mb-6">Activité récente</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3 pb-4 border-b">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
+                <div className="flex-1">
+                  <p className="font-medium text-sm">Nouveau rendez-vous confirmé</p>
+                  <p className="text-sm text-neutral-600">Jean Dupont - Financement immobilier</p>
+                  <p className="text-xs text-neutral-400 mt-1">Il y a 2 heures</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3 pb-4 border-b">
+                <div className="w-2 h-2 bg-yellow-600 rounded-full mt-2"></div>
+                <div className="flex-1">
+                  <p className="font-medium text-sm">Demande de rendez-vous</p>
+                  <p className="text-sm text-neutral-600">Sophie Martin - Conseil investissement</p>
+                  <p className="text-xs text-neutral-400 mt-1">Il y a 5 heures</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
+                <div className="flex-1">
+                  <p className="font-medium text-sm">Rendez-vous reprogrammé</p>
+                  <p className="text-sm text-neutral-600">Pierre Leblanc - PME financement</p>
+                  <p className="text-xs text-neutral-400 mt-1">Hier à 14:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+====== src/app/contact/page.tsx ======
+'use client'
+
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from 'lucide-react'
+
+const contactSchema = z.object({
+  name: z.string().min(2, 'Le nom doit contenir au moins 2 caractères'),
+  email: z.string().email('Email invalide'),
+  phone: z.string().min(8, 'Numéro de téléphone invalide'),
+  subject: z.string().min(5, 'Le sujet doit contenir au moins 5 caractères'),
+  message: z.string().min(20, 'Le message doit contenir au moins 20 caractères'),
+})
+
+type ContactFormData = z.infer<typeof contactSchema>
+
+export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactSchema),
+  })
+
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true)
+
+    try {
+      // Simuler l'envoi (à remplacer par un vrai appel API)
+      await new Promise(resolve => setTimeout(resolve, 1500))
+      
+      console.log('Form data:', data)
+      setSubmitSuccess(true)
+      reset()
+
+      // Masquer le message de succès après 5 secondes
+      setTimeout(() => setSubmitSuccess(false), 5000)
+    } catch (error) {
+      console.error('Error:', error)
+      alert('Une erreur est survenue. Veuillez réessayer.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+        <div className="container-custom text-center">
+          <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
+            Contactez-nous
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+            Une question ? Un projet ? Notre équipe est là pour vous répondre
+          </p>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="section-padding">
+        <div className="container-custom max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <h2 className="font-display text-3xl font-bold text-neutral-900 mb-8">
+                Envoyez-nous un message
+              </h2>
+
+              {submitSuccess && (
+                <div className="mb-6 p-4 bg-green-50 border-l-4 border-green-600 rounded">
+                  <p className="text-green-800 font-semibold">
+                    ✓ Message envoyé avec succès !
+                  </p>
+                  <p className="text-green-700 text-sm mt-1">
+                    Nous vous répondrons dans les plus brefs délais.
+                  </p>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <div>
+                  <label className="label">Nom complet *</label>
+                  <input
+                    {...register('name')}
+                    type="text"
+                    className="input-field"
+                    placeholder="Jean Dupont"
+                  />
+                  {errors.name && (
+                    <p className="text-red-600 text-sm mt-1">{errors.name.message}</p>
+                  )}
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="label">Email *</label>
+                    <input
+                      {...register('email')}
+                      type="email"
+                      className="input-field"
+                      placeholder="jean.dupont@example.com"
+                    />
+                    {errors.email && (
+                      <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <label className="label">Téléphone *</label>
+                    <input
+                      {...register('phone')}
+                      type="tel"
+                      className="input-field"
+                      placeholder="+225 07 07 99 48 59"
+                    />
+                    {errors.phone && (
+                      <p className="text-red-600 text-sm mt-1">{errors.phone.message}</p>
+                    )}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="label">Sujet *</label>
+                  <input
+                    {...register('subject')}
+                    type="text"
+                    className="input-field"
+                    placeholder="Ex: Demande de financement immobilier"
+                  />
+                  {errors.subject && (
+                    <p className="text-red-600 text-sm mt-1">{errors.subject.message}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="label">Message *</label>
+                  <textarea
+                    {...register('message')}
+                    className="input-field"
+                    rows={6}
+                    placeholder="Décrivez votre demande ou votre projet..."
+                  />
+                  {errors.message && (
+                    <p className="text-red-600 text-sm mt-1">{errors.message.message}</p>
+                  )}
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <div className="inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                      Envoi en cours...
+                    </>
+                  ) : (
+                    <>
+                      Envoyer le message
+                      <Send className="inline ml-2 w-5 h-5" />
+                    </>
+                  )}
+                </button>
+
+                <p className="text-sm text-neutral-600">
+                  * Champs obligatoires - Vos données sont protégées et ne seront pas partagées
+                </p>
+              </form>
+            </div>
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="font-display text-3xl font-bold text-neutral-900 mb-8">
+                  Nos coordonnées
+                </h2>
+
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-primary-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">Adresse</h3>
+                      <p className="text-neutral-600">
+                        Abidjan<br />
+                        Côte d'Ivoire
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-primary-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
+                      <div className="space-y-2">
+                        <a 
+                          href="tel:+2250707994859" 
+                          className="block text-primary-600 hover:text-primary-700 font-medium"
+                        >
+                          +225 07 07 99 48 59
+                        </a>
+                        <a 
+                          href="tel:+33744230383" 
+                          className="block text-primary-600 hover:text-primary-700 font-medium"
+                        >
+                          +33 7 44 23 03 83
+                        </a>
+                      </div>
+                      <p className="text-sm text-neutral-600 mt-2">
+                        Du lundi au vendredi, 9h - 18h
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MessageCircle className="w-6 h-6 text-green-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">WhatsApp</h3>
+                      <a 
+                        href="https://wa.me/2250707994859" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-green-600 hover:text-green-700 font-medium"
+                      >
+                        +225 07 07 99 48 59
+                      </a>
+                      <p className="text-sm text-neutral-600 mt-1">
+                        Disponible 24/7
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-primary-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">Email</h3>
+                      <a 
+                        href="mailto:contact@nkco.pro" 
+                        className="text-primary-600 hover:text-primary-700 font-medium"
+                      >
+                        contact@nkco.pro
+                      </a>
+                      <p className="text-sm text-neutral-600 mt-1">
+                        Réponse sous 24h
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-primary-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">Horaires</h3>
+                      <div className="text-neutral-600 space-y-1">
+                        <p>Lundi - Vendredi : 9h00 - 18h00</p>
+                        <p>Samedi - Dimanche : Fermé</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick CTA */}
+              <div className="card bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+                <h3 className="font-bold text-xl mb-3">Préférez un rendez-vous ?</h3>
+                <p className="text-primary-100 mb-4">
+                  Réservez un créneau pour discuter de votre projet en visio ou en personne.
+                </p>
+                <a 
+                  href="/rendez-vous" 
+                  className="btn-secondary block text-center bg-white text-primary-700 hover:bg-primary-50"
+                >
+                  Prendre rendez-vous
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="section-padding bg-neutral-50">
+        <div className="container-custom max-w-4xl">
+          <h2 className="font-display text-3xl font-bold text-center text-neutral-900 mb-12">
+            Questions Fréquentes
+          </h2>
+
+          <div className="space-y-6">
+            <div className="card">
+              <h3 className="font-bold text-lg mb-2">Quel est le délai de réponse ?</h3>
+              <p className="text-neutral-600">
+                Nous nous engageons à répondre à tous les messages dans un délai de 24h ouvrées.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="font-bold text-lg mb-2">Les consultations sont-elles payantes ?</h3>
+              <p className="text-neutral-600">
+                Le premier rendez-vous est toujours gratuit et sans engagement. C'est l'occasion 
+                de faire connaissance et d'étudier ensemble votre projet.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="font-bold text-lg mb-2">Intervenez-vous partout en Côte d'Ivoire ?</h3>
+              <p className="text-neutral-600">
+                Oui, nous accompagnons des clients dans toute la Côte d'Ivoire et à l'international 
+                grâce à nos rendez-vous en visioconférence et notre réseau de partenaires.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="font-bold text-lg mb-2">Mes données sont-elles protégées ?</h3>
+              <p className="text-neutral-600">
+                Absolument. Toutes vos informations sont traitées de manière confidentielle et 
+                sécurisée conformément au RGPD. Elles ne sont jamais partagées avec des tiers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+====== src/app/layout.tsx ======
+import type { Metadata } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: 'NK&Co - Conseil en Financement et Investissement',
+  description: 'NK&Co vous accompagne dans vos projets de financement, investissements immobiliers et conseil en stratégie. Expertise PME, salariés, fonctionnaires et commerçants.',
+  keywords: [
+    'financement',
+    'investissement',
+    'conseil financier',
+    'immobilier',
+    'crédit professionnel',
+    'PME',
+    'stratégie entreprise',
+  ],
+  authors: [{ name: 'NK&Co' }],
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://nkco.fr',
+    title: 'NK&Co - Conseil en Financement et Investissement',
+    description: 'Votre partenaire financier pour tous vos projets',
+    siteName: 'NK&Co',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+      <body className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+      </body>
+    </html>
+  )
+}
+
+====== src/app/page.tsx ======
+import Hero from '@/components/home/Hero'
+import ServicesOverview from '@/components/home/ServicesOverview'
+import WhyChooseUs from '@/components/home/WhyChooseUs'
+import CTASection from '@/components/home/CTASection'
+
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      <ServicesOverview />
+      <WhyChooseUs />
+      <CTASection />
+    </>
+  )
+}
+
+====== src/app/rendez-vous/page.tsx ======
+import AppointmentForm from '@/components/booking/AppointmentForm'
+import { Calendar, CheckCircle2, Users } from 'lucide-react'
+
+export const metadata = {
+  title: 'Prendre Rendez-vous | NK&Co',
+  description: 'Réservez votre rendez-vous en ligne avec NK&Co pour discuter de vos projets de financement et investissement',
+}
+
+export default function RendezVousPage() {
+  return (
+    <div className="min-h-screen bg-neutral-50">
+      {/* Hero section */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+        <div className="container-custom text-center">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            Réservez votre rendez-vous
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+            Choisissez le créneau qui vous convient et discutons de votre projet
+          </p>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-12 bg-white border-b">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="flex items-start space-x-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Calendar className="w-6 h-6 text-primary-600" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">Réservation instantanée</h3>
+                <p className="text-neutral-600">Choisissez votre créneau et recevez une confirmation immédiate</p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Users className="w-6 h-6 text-primary-600" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">Expert dédié</h3>
+                <p className="text-neutral-600">Rencontrez un conseiller spécialisé dans votre domaine</p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <CheckCircle2 className="w-6 h-6 text-primary-600" />
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-2">Sans engagement</h3>
+                <p className="text-neutral-600">Premier échange gratuit et sans aucune obligation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Appointment Form */}
+      <section className="py-16">
+        <div className="container-custom max-w-4xl">
+          <AppointmentForm />
+        </div>
+      </section>
+    </div>
+  )
+}
+
+====== src/app/services/[slug]/page.tsx ======
+import { notFound } from 'next/navigation'
+import Link from 'next/link'
+import { ArrowRight, CheckCircle2, Phone, Mail } from 'lucide-react'
+import { services } from '@/data/services'
+
+interface ServicePageProps {
+  params: {
+    slug: string
+  }
+}
+
+export async function generateStaticParams() {
+  return [
+    { slug: 'financement' },
+    { slug: 'investissement' },
+    { slug: 'commerce' },
+    { slug: 'immobilier' },
+    { slug: 'conseil' },
+  ]
+}
+
+export default function ServiceDetailPage({ params }: ServicePageProps) {
+  // Map slug to service
+  const serviceMap: Record<string, string[]> = {
+    'financement': ['financement'],
+    'investissement': ['investissement'],
+    'commerce': ['commerce'],
+    'immobilier': ['immobilier-principal', 'immobilier-secondaire', 'immobilier-locatif'],
+    'conseil': ['organisation', 'strategie'],
+  }
+
+  const serviceIds = serviceMap[params.slug]
+  if (!serviceIds) {
+    notFound()
+  }
+
+  const relatedServices = services.filter(s => serviceIds.includes(s.id))
+
+  if (relatedServices.length === 0) {
+    notFound()
+  }
+
+  const mainService = relatedServices[0]
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+        <div className="container-custom">
+          <div className="max-w-4xl">
+            <div className="text-6xl mb-6">{mainService.icon}</div>
+            <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
+              {mainService.title}
+            </h1>
+            <p className="text-xl md:text-2xl text-primary-100">
+              {mainService.description}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="section-padding">
+        <div className="container-custom max-w-6xl">
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Left Content */}
+            <div className="lg:col-span-2 space-y-12">
+              {relatedServices.map((service) => (
+                <div key={service.id} className="space-y-8">
+                  {relatedServices.length > 1 && (
+                    <h2 className="font-display text-3xl font-bold text-neutral-900">
+                      {service.title}
+                    </h2>
+                  )}
+
+                  <div>
+                    <h3 className="text-2xl font-bold text-neutral-900 mb-6 flex items-center">
+                      <span className="w-2 h-8 bg-primary-600 mr-4"></span>
+                      Ce que nous proposons
+                    </h3>
+                    <ul className="space-y-4">
+                      {service.details.map((detail, i) => (
+                        <li key={i} className="flex items-start space-x-4">
+                          <CheckCircle2 className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" />
+                          <span className="text-lg text-neutral-700">{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="text-2xl font-bold text-neutral-900 mb-6 flex items-center">
+                      <span className="w-2 h-8 bg-accent-600 mr-4"></span>
+                      Vos avantages
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {service.benefits.map((benefit, i) => (
+                        <div key={i} className="flex items-center space-x-3 p-4 bg-primary-50 rounded-lg">
+                          <div className="w-2 h-2 bg-primary-600 rounded-full flex-shrink-0"></div>
+                          <span className="font-semibold text-neutral-900">{benefit}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {relatedServices.length > 1 && relatedServices.indexOf(service) < relatedServices.length - 1 && (
+                    <div className="border-t border-neutral-200 pt-8"></div>
+                  )}
+                </div>
+              ))}
+
+              {/* Process Section */}
+              <div className="bg-neutral-50 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-6">
+                  Notre processus
+                </h3>
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      1
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">Analyse de votre situation</h4>
+                      <p className="text-neutral-600">Étude approfondie de votre projet et de vos besoins spécifiques</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      2
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">Recherche des meilleures solutions</h4>
+                      <p className="text-neutral-600">Nous sollicitons notre réseau pour trouver les offres les plus adaptées</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      3
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">Montage et négociation</h4>
+                      <p className="text-neutral-600">Préparation du dossier et négociation des conditions optimales</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      4
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-2">Accompagnement jusqu'au bout</h4>
+                      <p className="text-neutral-600">Suivi complet jusqu'à la concrétisation de votre projet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Sidebar - CTA */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24 space-y-6">
+                {/* CTA Card */}
+                <div className="card bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+                  <h3 className="font-display text-2xl font-bold mb-4">
+                    Prêt à vous lancer ?
+                  </h3>
+                  <p className="mb-6 text-primary-100">
+                    Discutons de votre projet lors d'un premier rendez-vous gratuit et sans engagement.
+                  </p>
+                  <Link href="/rendez-vous" className="btn-secondary block text-center bg-white text-primary-700 hover:bg-primary-50">
+                    Prendre rendez-vous
+                    <ArrowRight className="inline ml-2 w-5 h-5" />
+                  </Link>
+                </div>
+
+                {/* Contact Card */}
+                <div className="card">
+                  <h3 className="font-bold text-xl mb-4">Besoin d'informations ?</h3>
+                  <div className="space-y-4">
+                    <a href="tel:+33123456789" className="flex items-center space-x-3 text-neutral-700 hover:text-primary-600 transition-colors">
+                      <Phone className="w-5 h-5" />
+                    <span>+225 07 07 99 48 59</span>
+                    </a>
+                    <a href="mailto:contact@nkco.fr" className="flex items-center space-x-3 text-neutral-700 hover:text-primary-600 transition-colors">
+                      <Mail className="w-5 h-5" />
+                      <span>contact@nkco.pro</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Trust Indicators */}
+                <div className="card bg-accent-50">
+                  <h4 className="font-bold mb-4">Pourquoi nous faire confiance ?</h4>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle2 className="w-5 h-5 text-accent-600 flex-shrink-0" />
+                      <span>15+ ans d'expérience</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle2 className="w-5 h-5 text-accent-600 flex-shrink-0" />
+                      <span>500+ clients satisfaits</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle2 className="w-5 h-5 text-accent-600 flex-shrink-0" />
+                      <span>Taux de réussite 95%</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <CheckCircle2 className="w-5 h-5 text-accent-600 flex-shrink-0" />
+                      <span>Accompagnement personnalisé</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Other Services */}
+      <section className="section-padding bg-neutral-50">
+        <div className="container-custom">
+          <h2 className="font-display text-3xl font-bold text-center mb-12">
+            Découvrez nos autres services
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {Object.entries(serviceMap)
+              .filter(([slug]) => slug !== params.slug)
+              .map(([slug, ids]) => {
+                const service = services.find(s => s.id === ids[0])
+                if (!service) return null
+                
+                return (
+                  <Link 
+                    key={slug}
+                    href={`/services/${slug}`}
+                    className="card hover:shadow-xl transition-all group"
+                  >
+                    <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform">
+                      {service.icon}
+                    </div>
+                    <h3 className="font-bold text-lg mb-2 group-hover:text-primary-600 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-neutral-600 text-sm line-clamp-2 mb-4">
+                      {service.description}
+                    </p>
+                    <span className="text-primary-600 font-semibold text-sm group-hover:underline">
+                      En savoir plus →
+                    </span>
+                  </Link>
+                )
+              })
+            }
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+====== src/app/services/page.tsx ======
+import { services } from '@/data/services'
+import Link from 'next/link'
+import { ArrowRight, CheckCircle2 } from 'lucide-react'
+
+export const metadata = {
+  title: 'Nos Services | NK&Co',
+  description: 'Découvrez l\'ensemble de nos services : financement, investissement, immobilier, conseil stratégique',
+}
+
+export default function ServicesPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+        <div className="container-custom text-center">
+          <h1 className="font-display text-5xl md:text-6xl font-bold mb-6">
+            Nos Services
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-100 max-w-3xl mx-auto">
+            Des solutions complètes pour accompagner tous vos projets financiers
+          </p>
+        </div>
+      </section>
+
+      {/* Services détaillés */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="space-y-24">
+            {services.map((service, index) => (
+              <div 
+                key={service.id} 
+                id={service.id}
+                className="scroll-mt-24"
+              >
+                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                  {/* Content */}
+                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                    <div className="text-6xl mb-6">{service.icon}</div>
+                    <h2 className="font-display text-4xl font-bold text-neutral-900 mb-6">
+                      {service.title}
+                    </h2>
+                    <p className="text-xl text-neutral-600 mb-8">
+                      {service.description}
+                    </p>
+
+                    <div className="mb-8">
+                      <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                        Ce que nous proposons :
+                      </h3>
+                      <ul className="space-y-3">
+                        {service.details.map((detail, i) => (
+                          <li key={i} className="flex items-start space-x-3">
+                            <CheckCircle2 className="w-6 h-6 text-primary-600 flex-shrink-0 mt-0.5" />
+                            <span className="text-neutral-700">{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="mb-8">
+                      <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                        Vos avantages :
+                      </h3>
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        {service.benefits.map((benefit, i) => (
+                          <div key={i} className="flex items-center space-x-2">
+                            <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
+                            <span className="text-neutral-700 font-medium">{benefit}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 mb-8">
+                      <span className="text-sm font-semibold text-neutral-600">Pour :</span>
+                      {service.targetClients.map((client) => (
+                        <span 
+                          key={client}
+                          className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full font-medium"
+                        >
+                          {client}
+                        </span>
+                      ))}
+                    </div>
+
+                    <Link href="/rendez-vous" className="btn-primary inline-flex items-center">
+                      Prendre rendez-vous
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  </div>
+
+                  {/* Image placeholder */}
+                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                    <div className="aspect-square bg-gradient-to-br from-primary-100 to-accent-100 rounded-3xl flex items-center justify-center text-8xl">
+                      {service.icon}
+                    </div>
+                  </div>
+                </div>
+
+                {index < services.length - 1 && (
+                  <div className="border-t border-neutral-200 mt-24"></div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section-padding bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+        <div className="container-custom text-center">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            Besoin de conseils personnalisés ?
+          </h2>
+          <p className="text-xl mb-8 text-primary-100 max-w-2xl mx-auto">
+            Nos experts sont à votre disposition pour étudier votre projet et vous proposer les meilleures solutions
+          </p>
+          <Link href="/rendez-vous" className="btn-secondary inline-flex items-center bg-white text-primary-700 hover:bg-primary-50">
+            Prendre rendez-vous
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+====== src/components/booking/AppointmentForm.tsx ======
+'use client'
+
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import { format } from 'date-fns'
+import { fr } from 'date-fns/locale'
+import CalendarView from './CalendarView'
+import TimeSlotSelector from './TimeSlotSelector'
+import ConfirmationModal from './ConfirmationModal'
+import { 
+  SERVICE_LABELS, 
+  CLIENT_TYPE_LABELS,
+  type ServiceType,
+  type ClientType 
+} from '@/types/appointment'
+
+const appointmentSchema = z.object({
+  firstName: z.string().min(2, 'Le prénom doit contenir au moins 2 caractères'),
+  lastName: z.string().min(2, 'Le nom doit contenir au moins 2 caractères'),
+  email: z.string().email('Email invalide'),
+  phone: z.string().regex(/^(\+33|0)[1-9](\d{8})$/, 'Numéro de téléphone invalide'),
+  company: z.string().optional(),
+  service: z.enum([
+    'FINANCEMENT',
+    'INVESTISSEMENT',
+    'COMMERCE',
+    'IMMOBILIER_PRINCIPAL',
+    'IMMOBILIER_SECONDAIRE',
+    'IMMOBILIER_LOCATIF',
+    'ORGANISATION',
+    'STRATEGIE'
+  ]),
+  clientType: z.enum(['PME', 'SALARIE', 'FONCTIONNAIRE', 'COMMERCANT']),
+  message: z.string().optional(),
+})
+
+type AppointmentFormData = z.infer<typeof appointmentSchema>
+
+export default function AppointmentForm() {
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null)
+  const [selectedTimeSlot, setSelectedTimeSlot] = useState<string | null>(null)
+  const [showConfirmation, setShowConfirmation] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<AppointmentFormData>({
+    resolver: zodResolver(appointmentSchema),
+  })
+
+  const onSubmit = async (data: AppointmentFormData) => {
+    if (!selectedDate || !selectedTimeSlot) {
+      alert('Veuillez sélectionner une date et un créneau horaire')
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/appointments', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...data,
+          date: selectedDate,
+          timeSlot: selectedTimeSlot,
+        }),
+      })
+
+      if (response.ok) {
+        setShowConfirmation(true)
+        reset()
+        setSelectedDate(null)
+        setSelectedTimeSlot(null)
+      } else {
+        alert('Une erreur est survenue. Veuillez réessayer.')
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      alert('Une erreur est survenue. Veuillez réessayer.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  return (
+    <>
+      <form onSubmit={handleSubmit(onSubmit)} className="card">
+        <h2 className="font-display text-3xl font-bold mb-8">Informations de contact</h2>
+        
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label className="label">Prénom *</label>
+            <input
+              {...register('firstName')}
+              type="text"
+              className="input-field"
+              placeholder="Jean"
+            />
+            {errors.firstName && (
+              <p className="text-red-600 text-sm mt-1">{errors.firstName.message}</p>
+            )}
+          </div>
+
+          <div>
+            <label className="label">Nom *</label>
+            <input
+              {...register('lastName')}
+              type="text"
+              className="input-field"
+              placeholder="Dupont"
+            />
+            {errors.lastName && (
+              <p className="text-red-600 text-sm mt-1">{errors.lastName.message}</p>
+            )}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label className="label">Email *</label>
+            <input
+              {...register('email')}
+              type="email"
+              className="input-field"
+              placeholder="jean.dupont@example.com"
+            />
+            {errors.email && (
+              <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>
+            )}
+          </div>
+
+          <div>
+            <label className="label">Téléphone *</label>
+            <input
+              {...register('phone')}
+              type="tel"
+              className="input-field"
+              placeholder="06 12 34 56 78"
+            />
+            {errors.phone && (
+              <p className="text-red-600 text-sm mt-1">{errors.phone.message}</p>
+            )}
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <label className="label">Entreprise (optionnel)</label>
+          <input
+            {...register('company')}
+            type="text"
+            className="input-field"
+            placeholder="Nom de votre entreprise"
+          />
+        </div>
+
+        <h2 className="font-display text-3xl font-bold mb-8 mt-12">Votre projet</h2>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label className="label">Type de service *</label>
+            <select {...register('service')} className="input-field">
+              <option value="">Sélectionnez un service</option>
+              {Object.entries(SERVICE_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+            {errors.service && (
+              <p className="text-red-600 text-sm mt-1">{errors.service.message}</p>
+            )}
+          </div>
+
+          <div>
+            <label className="label">Profil *</label>
+            <select {...register('clientType')} className="input-field">
+              <option value="">Sélectionnez votre profil</option>
+              {Object.entries(CLIENT_TYPE_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </select>
+            {errors.clientType && (
+              <p className="text-red-600 text-sm mt-1">{errors.clientType.message}</p>
+            )}
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <label className="label">Message (optionnel)</label>
+          <textarea
+            {...register('message')}
+            className="input-field"
+            rows={4}
+            placeholder="Décrivez brièvement votre projet..."
+          />
+        </div>
+
+        <h2 className="font-display text-3xl font-bold mb-8 mt-12">Date et heure</h2>
+
+        <div className="mb-6">
+          <label className="label mb-4">Sélectionnez une date</label>
+          <CalendarView onSelectDate={setSelectedDate} selectedDate={selectedDate} />
+        </div>
+
+        {selectedDate && (
+          <div className="mb-8">
+            <label className="label mb-4">
+              Créneaux disponibles le {format(selectedDate, 'dd MMMM yyyy', { locale: fr })}
+            </label>
+            <TimeSlotSelector
+              date={selectedDate}
+              onSelectTimeSlot={setSelectedTimeSlot}
+              selectedTimeSlot={selectedTimeSlot}
+            />
+          </div>
+        )}
+
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            disabled={isSubmitting || !selectedDate || !selectedTimeSlot}
+            className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? 'Envoi en cours...' : 'Confirmer le rendez-vous'}
+          </button>
+        </div>
+      </form>
+
+      {showConfirmation && (
+        <ConfirmationModal
+          onClose={() => setShowConfirmation(false)}
+          date={selectedDate!}
+          timeSlot={selectedTimeSlot!}
+        />
+      )}
+    </>
+  )
+}
+
+====== src/components/booking/CalendarView.tsx ======
+'use client'
+
+import { useState } from 'react'
+import { format, addMonths, subMonths, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, isAfter, isBefore, startOfDay } from 'date-fns'
+import { fr } from 'date-fns/locale'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+
+interface CalendarViewProps {
+  onSelectDate: (date: Date) => void
+  selectedDate: Date | null
+}
+
+export default function CalendarView({ onSelectDate, selectedDate }: CalendarViewProps) {
+  const [currentMonth, setCurrentMonth] = useState(new Date())
+  const today = startOfDay(new Date())
+  
+  // Dates limites: aujourd'hui et dans 3 mois
+  const minDate = today
+  const maxDate = addMonths(today, 3)
+
+  const monthStart = startOfMonth(currentMonth)
+  const monthEnd = endOfMonth(currentMonth)
+  const daysInMonth = eachDayOfInterval({ start: monthStart, end: monthEnd })
+
+  const previousMonth = () => {
+    setCurrentMonth(subMonths(currentMonth, 1))
+  }
+
+  const nextMonth = () => {
+    setCurrentMonth(addMonths(currentMonth, 1))
+  }
+
+  const isDateSelectable = (date: Date) => {
+    const day = date.getDay()
+    // Samedi (6) et Dimanche (0) non sélectionnables
+    if (day === 0 || day === 6) return false
+    
+    // Date doit être entre aujourd'hui et dans 3 mois
+    return !isBefore(date, minDate) && !isAfter(date, maxDate)
+  }
+
+  const weekDays = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim']
+
+  return (
+    <div className="bg-white rounded-lg border border-neutral-200 p-6">
+      {/* Header with month navigation */}
+      <div className="flex items-center justify-between mb-6">
+        <button
+          type="button"
+          onClick={previousMonth}
+          className="p-2 hover:bg-neutral-100 rounded-lg transition-colors"
+          disabled={isBefore(subMonths(currentMonth, 1), today)}
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        
+        <h3 className="font-bold text-xl">
+          {format(currentMonth, 'MMMM yyyy', { locale: fr })}
+        </h3>
+        
+        <button
+          type="button"
+          onClick={nextMonth}
+          className="p-2 hover:bg-neutral-100 rounded-lg transition-colors"
+          disabled={isAfter(addMonths(currentMonth, 1), maxDate)}
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Weekday headers */}
+      <div className="grid grid-cols-7 gap-2 mb-2">
+        {weekDays.map((day) => (
+          <div key={day} className="text-center text-sm font-semibold text-neutral-600 py-2">
+            {day}
+          </div>
+        ))}
+      </div>
+
+      {/* Calendar days */}
+      <div className="grid grid-cols-7 gap-2">
+        {daysInMonth.map((day, index) => {
+          const isSelectable = isDateSelectable(day)
+          const isSelected = selectedDate && isSameDay(day, selectedDate)
+          const isToday = isSameDay(day, today)
+
+          return (
+            <button
+              key={index}
+              type="button"
+              onClick={() => isSelectable && onSelectDate(day)}
+              disabled={!isSelectable}
+              className={`
+                aspect-square p-2 rounded-lg text-sm font-medium transition-all
+                ${!isSameMonth(day, currentMonth) ? 'text-neutral-300' : ''}
+                ${isSelectable ? 'hover:bg-primary-100 cursor-pointer' : 'cursor-not-allowed opacity-40'}
+                ${isSelected ? 'bg-primary-600 text-white hover:bg-primary-700' : ''}
+                ${isToday && !isSelected ? 'border-2 border-primary-600' : ''}
+                ${!isSelectable && !isSelected ? 'text-neutral-400' : ''}
+              `}
+            >
+              {format(day, 'd')}
+            </button>
+          )
+        })}
+      </div>
+
+      <div className="mt-4 text-sm text-neutral-600">
+        <p>• Les week-ends ne sont pas disponibles</p>
+        <p>• Réservations possibles jusqu'à 3 mois à l'avance</p>
+      </div>
+    </div>
+  )
+}
+
+====== src/components/booking/ConfirmationModal.tsx ======
+'use client'
+
+import { format } from 'date-fns'
+import { fr } from 'date-fns/locale'
+import { CheckCircle2, X, Calendar, Clock, Mail } from 'lucide-react'
+
+interface ConfirmationModalProps {
+  onClose: () => void
+  date: Date
+  timeSlot: string
+}
+
+export default function ConfirmationModal({ onClose, date, timeSlot }: ConfirmationModalProps) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 animate-scale-in">
+        <div className="flex justify-between items-start mb-6">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+            <CheckCircle2 className="w-10 h-10 text-green-600" />
+          </div>
+          <button
+            onClick={onClose}
+            className="text-neutral-400 hover:text-neutral-600 transition-colors"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        <h2 className="font-display text-3xl font-bold text-neutral-900 mb-4">
+          Rendez-vous confirmé !
+        </h2>
+
+        <p className="text-neutral-600 mb-6">
+          Votre demande de rendez-vous a bien été envoyée. Nous vous confirmerons ce créneau par email sous 24h.
+        </p>
+
+        <div className="space-y-4 mb-8">
+          <div className="flex items-center space-x-4 p-4 bg-primary-50 rounded-lg">
+            <Calendar className="w-6 h-6 text-primary-600 flex-shrink-0" />
+            <div>
+              <div className="text-sm text-neutral-600">Date</div>
+              <div className="font-semibold text-neutral-900">
+                {format(date, 'EEEE d MMMM yyyy', { locale: fr })}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-4 p-4 bg-primary-50 rounded-lg">
+            <Clock className="w-6 h-6 text-primary-600 flex-shrink-0" />
+            <div>
+              <div className="text-sm text-neutral-600">Heure</div>
+              <div className="font-semibold text-neutral-900">{timeSlot}</div>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-4 p-4 bg-primary-50 rounded-lg">
+            <Mail className="w-6 h-6 text-primary-600 flex-shrink-0" />
+            <div>
+              <div className="text-sm text-neutral-600">Confirmation</div>
+              <div className="font-semibold text-neutral-900">Par email sous 24h</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-accent-50 border-l-4 border-accent-600 p-4 rounded mb-6">
+          <p className="text-sm text-neutral-700">
+            <strong>Prochaines étapes :</strong><br />
+            1. Vous recevrez un email de confirmation<br />
+            2. Notre équipe validera votre rendez-vous<br />
+            3. Vous recevrez les détails de connexion (visio) ou l'adresse (présentiel)
+          </p>
+        </div>
+
+        <button
+          onClick={onClose}
+          className="w-full btn-primary"
+        >
+          Fermer
+        </button>
+      </div>
+    </div>
+  )
+}
+
+====== src/components/booking/TimeSlotSelector.tsx ======
+'use client'
+
+import { AVAILABLE_TIME_SLOTS } from '@/types/appointment'
+import { Clock } from 'lucide-react'
+
+interface TimeSlotSelectorProps {
+  date: Date
+  onSelectTimeSlot: (timeSlot: string) => void
+  selectedTimeSlot: string | null
+}
+
+export default function TimeSlotSelector({ date, onSelectTimeSlot, selectedTimeSlot }: TimeSlotSelectorProps) {
+  // Simuler les créneaux déjà réservés (à remplacer par de vraies données)
+  const getBookedSlots = (date: Date): string[] => {
+    // Ici, vous feriez un appel API pour récupérer les créneaux réservés
+    // Pour la démo, on simule quelques créneaux réservés
+    return ['10:00', '14:30', '16:00']
+  }
+
+  const bookedSlots = getBookedSlots(date)
+
+  const isSlotAvailable = (timeSlot: string) => {
+    return !bookedSlots.includes(timeSlot)
+  }
+
+  const morningSlots = AVAILABLE_TIME_SLOTS.filter(slot => {
+    const hour = parseInt(slot.split(':')[0])
+    return hour < 12
+  })
+
+  const afternoonSlots = AVAILABLE_TIME_SLOTS.filter(slot => {
+    const hour = parseInt(slot.split(':')[0])
+    return hour >= 12
+  })
+
+  const SlotButton = ({ timeSlot }: { timeSlot: string }) => {
+    const isAvailable = isSlotAvailable(timeSlot)
+    const isSelected = selectedTimeSlot === timeSlot
+
+    return (
+      <button
+        type="button"
+        onClick={() => isAvailable && onSelectTimeSlot(timeSlot)}
+        disabled={!isAvailable}
+        className={`
+          flex items-center justify-center space-x-2 px-4 py-3 rounded-lg font-medium transition-all
+          ${isAvailable ? 'hover:scale-105 cursor-pointer' : 'cursor-not-allowed opacity-40'}
+          ${isSelected ? 'bg-primary-600 text-white shadow-lg' : 'bg-white border-2 border-neutral-200 hover:border-primary-300'}
+          ${!isAvailable && !isSelected ? 'bg-neutral-100 text-neutral-400' : ''}
+        `}
+      >
+        <Clock className="w-4 h-4" />
+        <span>{timeSlot}</span>
+      </button>
+    )
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Matinée */}
+      <div>
+        <h4 className="font-semibold text-lg mb-3 flex items-center">
+          <span className="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>
+          Matinée (9h - 12h)
+        </h4>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {morningSlots.map(slot => (
+            <SlotButton key={slot} timeSlot={slot} />
+          ))}
+        </div>
+      </div>
+
+      {/* Après-midi */}
+      <div>
+        <h4 className="font-semibold text-lg mb-3 flex items-center">
+          <span className="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>
+          Après-midi (12h - 18h)
+        </h4>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {afternoonSlots.map(slot => (
+            <SlotButton key={slot} timeSlot={slot} />
+          ))}
+        </div>
+      </div>
+
+      {/* Légende */}
+      <div className="flex flex-wrap gap-4 text-sm mt-6 p-4 bg-neutral-50 rounded-lg">
+        <div className="flex items-center space-x-2">
+          <div className="w-4 h-4 bg-white border-2 border-neutral-200 rounded"></div>
+          <span className="text-neutral-600">Disponible</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <div className="w-4 h-4 bg-primary-600 rounded"></div>
+          <span className="text-neutral-600">Sélectionné</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <div className="w-4 h-4 bg-neutral-100 rounded"></div>
+          <span className="text-neutral-600">Réservé</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+====== src/components/home/CTASection.tsx ======
+import Link from 'next/link'
+import { Calendar, MessageSquare, ArrowRight } from 'lucide-react'
+
+export default function CTASection() {
+  return (
+    <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent-300 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container-custom relative">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            Prêt à concrétiser vos projets ?
+          </h2>
+          <p className="text-xl md:text-2xl mb-12 text-primary-100">
+            Prenez rendez-vous dès aujourd'hui pour un premier échange gratuit et sans engagement
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20">
+              <Calendar className="w-12 h-12 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Rendez-vous en ligne</h3>
+              <p className="mb-6 text-primary-100">
+                Choisissez le créneau qui vous convient et rencontrez-nous par visio ou en personne
+              </p>
+              <Link 
+                href="/rendez-vous" 
+                className="inline-flex items-center justify-center w-full px-6 py-3 bg-white text-primary-700 font-bold rounded-lg hover:bg-primary-50 transition-all transform hover:scale-105"
+              >
+                Réserver un créneau
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/20">
+              <MessageSquare className="w-12 h-12 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-3">Contactez-nous</h3>
+              <p className="mb-6 text-primary-100">
+                Une question ? Besoin d'informations ? Notre équipe vous répond sous 24h
+              </p>
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center justify-center w-full px-6 py-3 bg-transparent text-white font-bold rounded-lg border-2 border-white hover:bg-white/10 transition-all"
+              >
+                Envoyer un message
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-lg">
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>Réponse sous 24h</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>Premier échange gratuit</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>Sans engagement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+====== src/components/home/ClienteleSection.tsx ======
+import Link from 'next/link'
+import { clienteles } from '@/data/clientele'
+import { ArrowRight } from 'lucide-react'
+
+export default function ClienteleSection() {
+  return (
+    <section className="section-padding bg-white">
+      <div className="container-custom">
+        <div className="text-center mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            Notre Clientèle
+          </h2>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Des solutions adaptées à chaque profil pour répondre à vos besoins spécifiques
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {clienteles.map((client, index) => (
+            <Link 
+              href={`/clientele#${client.id}`}
+              key={client.id}
+              className="group"
+            >
+              <div className="card h-full hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-primary-200">
+                <div className="text-center mb-6">
+                  <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform">
+                    {client.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
+                    {client.title}
+                  </h3>
+                </div>
+                
+                <p className="text-neutral-600 text-center mb-6 line-clamp-2">
+                  {client.description}
+                </p>
+
+                <div className="text-center">
+                  <span className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700">
+                    Découvrir
+                    <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link href="/clientele" className="btn-secondary inline-flex items-center">
+            Voir toute notre clientèle
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+====== src/components/home/Hero.tsx ======
+'use client'
+
+import Link from 'next/link'
+import { ArrowRight, TrendingUp, Shield, Users } from 'lucide-react'
+
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-300 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container-custom relative">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px] py-20">
+          {/* Left content */}
+          <div className="text-white animate-slide-up">
+            <div className="inline-block mb-6 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full">
+              <span className="text-sm font-semibold">✨ Votre partenaire financier de confiance</span>
+            </div>
+            
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              Réalisez vos projets avec
+              <span className="block mt-2 text-accent-300">NK&Co</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl mb-8 text-primary-100 leading-relaxed">
+              Expertise en financement, investissement et conseil stratégique pour accompagner votre réussite.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <Link href="/rendez-vous" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 font-bold rounded-lg hover:bg-primary-50 transition-all transform hover:scale-105 shadow-xl">
+                Prendre rendez-vous
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+              <Link href="/services" className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-lg border-2 border-white hover:bg-white/10 transition-all">
+                Découvrir nos services
+              </Link>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-1">500+</div>
+                <div className="text-sm text-primary-200">Clients satisfaits</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-1">10M€</div>
+                <div className="text-sm text-primary-200">Financements obtenus</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold mb-1">95%</div>
+                <div className="text-sm text-primary-200">Taux de réussite</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right content - Features cards */}
+          <div className="grid gap-6 animate-slide-up animation-delay-200">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-transform">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">Expertise reconnue</h3>
+              <p className="text-neutral-600">
+                Plus de 15 ans d'expérience dans le conseil financier et l'accompagnement de projets.
+              </p>
+            </div>
+
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-transform">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-500 to-accent-700 rounded-lg flex items-center justify-center mb-4">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">Accompagnement sur-mesure</h3>
+              <p className="text-neutral-600">
+                Solutions personnalisées adaptées à votre situation et vos objectifs spécifiques.
+              </p>
+            </div>
+
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl transform hover:scale-105 transition-transform">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">Réseau étendu</h3>
+              <p className="text-neutral-600">
+                Accès privilégié aux meilleures offres grâce à notre réseau bancaire et institutionnel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Wave separator */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+        </svg>
+      </div>
+    </section>
+  )
+}
+
+====== src/components/home/ServicesOverview.tsx ======
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+
+const featuredServices = [
+  {
+    id: 'financement',
+    slug: 'financement',
+    icon: '💰',
+    title: 'Assistance en Financement',
+    description: 'Solutions de financement adaptées à vos besoins professionnels et personnels',
+  },
+  {
+    id: 'investissement',
+    slug: 'investissement',
+    icon: '📈',
+    title: 'Conseils en Investissements',
+    description: 'Stratégies d\'investissement personnalisées pour faire fructifier votre patrimoine',
+  },
+  {
+    id: 'commerce',
+    slug: 'commerce',
+    icon: '🏪',
+    title: 'Financement des Activités Commerciales',
+    description: 'Financements dédiés au développement de votre activité commerciale',
+  },
+  {
+    id: 'immobilier',
+    slug: 'immobilier',
+    icon: '🏠',
+    title: 'Financement Immobilier',
+    description: 'Solutions complètes pour tous vos projets immobiliers',
+  },
+  {
+    id: 'organisation',
+    slug: 'conseil',
+    icon: '⚙️',
+    title: 'Conseils en Organisation',
+    description: 'Optimisation de l\'organisation et des processus de votre entreprise',
+  },
+  {
+    id: 'strategie',
+    slug: 'conseil',
+    icon: '🎯',
+    title: 'Conseils en Stratégie',
+    description: 'Accompagnement stratégique pour le développement de votre entreprise',
+  },
+]
+
+export default function ServicesOverview() {
+  return (
+    <section className="section-padding bg-neutral-50">
+      <div className="container-custom">
+        <div className="text-center mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            Nos Services
+          </h2>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Des solutions complètes pour tous vos besoins en financement, investissement et conseil stratégique
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredServices.map((service, index) => (
+            <Link 
+              key={service.id}
+              href={`/services/${service.slug}`}
+              className="card group hover:border-primary-200 border-2 border-transparent cursor-pointer transform hover:-translate-y-1 transition-all duration-300"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform">
+                {service.icon}
+              </div>
+              
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
+                {service.title}
+              </h3>
+              
+              <p className="text-neutral-600 mb-6 line-clamp-3">
+                {service.description}
+              </p>
+
+              <div className="inline-flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors">
+                En savoir plus
+                <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-2 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Link href="/services" className="btn-primary inline-flex items-center">
+            Voir tous nos services
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+====== src/components/home/WhyChooseUs.tsx ======
+import { CheckCircle2, Clock, Target, Award, HeartHandshake, Sparkles } from 'lucide-react'
+
+const features = [
+  {
+    icon: CheckCircle2,
+    title: 'Expertise éprouvée',
+    description: 'Plus de 15 ans d\'expérience dans le conseil financier et l\'accompagnement de projets complexes.',
+  },
+  {
+    icon: Clock,
+    title: 'Réactivité garantie',
+    description: 'Réponse sous 24h et traitement rapide de vos dossiers pour concrétiser vos projets sans délai.',
+  },
+  {
+    icon: Target,
+    title: 'Approche personnalisée',
+    description: 'Analyse approfondie de votre situation pour des solutions parfaitement adaptées à vos besoins.',
+  },
+  {
+    icon: Award,
+    title: 'Taux compétitifs',
+    description: 'Négociation des meilleures conditions grâce à notre réseau bancaire étendu et nos partenariats.',
+  },
+  {
+    icon: HeartHandshake,
+    title: 'Accompagnement total',
+    description: 'De la première consultation à la signature finale, nous sommes à vos côtés à chaque étape.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Transparence absolue',
+    description: 'Aucun frais caché, conseil impartial et communication claire tout au long du processus.',
+  },
+]
+
+export default function WhyChooseUs() {
+  return (
+    <section className="section-padding bg-gradient-to-br from-primary-50 to-accent-50">
+      <div className="container-custom">
+        <div className="text-center mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            Pourquoi choisir NK&Co ?
+          </h2>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Votre réussite est notre priorité. Découvrez ce qui fait la différence NK&Co
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => {
+            const Icon = feature.icon
+            return (
+              <div 
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              >
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                  <Icon className="w-8 h-8 text-white" />
+                </div>
+                
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
+                  {feature.title}
+                </h3>
+                
+                <p className="text-neutral-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Testimonial section */}
+       
+      </div>
+    </section>
+  )
+}
+
+====== src/components/layout/Footer.tsx ======
+import Link from 'next/link'
+import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter } from 'lucide-react'
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
+  return (
+    <footer className="bg-neutral-900 text-white">
+      <div className="container-custom py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* À propos */}
+          <div>
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">NK</span>
+              </div>
+              <span className="font-display text-xl font-bold">NK&Co</span>
+            </div>
+            <p className="text-neutral-400 mb-6">
+              Votre partenaire de confiance pour tous vos projets de financement, investissement et conseil stratégique.
+            </p>
+            <div className="flex space-x-4">
+              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Nos Services</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/services/financement" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Assistance en financement
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/investissement" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Conseils en investissements
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/commerce" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Financement commercial
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/immobilier" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Financement immobilier
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/conseil" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Conseil en stratégie
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Liens utiles */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Liens Utiles</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/services" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Tous nos services
+                </Link>
+              </li>
+              <li>
+                <Link href="/rendez-vous" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Prendre rendez-vous
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  Nous contacter
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="font-semibold text-lg mb-6">Contact</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-primary-400 mt-1 flex-shrink-0" />
+                <span className="text-neutral-400">
+                  Abidjan<br />
+                  Côte d'Ivoire
+                </span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                <div className="space-y-1">
+                  <a href="tel:+2250707994859" className="block text-neutral-400 hover:text-primary-400 transition-colors">
+                    +225 07 07 99 48 59
+                  </a>
+                  <a href="tel:+33744230383" className="block text-neutral-400 hover:text-primary-400 transition-colors">
+                    +33 7 44 23 03 83
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
+                <a href="mailto:contact@nkco.pro" className="text-neutral-400 hover:text-primary-400 transition-colors">
+                  contact@nkco.pro
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-neutral-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-neutral-400 text-sm mb-4 md:mb-0">
+            © {currentYear} NK&Co. Tous droits réservés.
+          </p>
+          <div className="flex space-x-6 text-sm">
+            <Link href="/mentions-legales" className="text-neutral-400 hover:text-primary-400 transition-colors">
+              Mentions légales
+            </Link>
+            <Link href="/politique-confidentialite" className="text-neutral-400 hover:text-primary-400 transition-colors">
+              Politique de confidentialité
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+====== src/components/layout/Header.tsx ======
+'use client'
+
+import Link from 'next/link'
+import { useState, useRef, useEffect } from 'react'
+import { Menu, X, ChevronDown } from 'lucide-react'
+
+export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  const handleServicesMouseEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current)
+      closeTimeoutRef.current = null
+    }
+    setServicesOpen(true)
+  }
+
+  const handleServicesMouseLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setServicesOpen(false)
+    }, 200) // Délai de 200ms avant fermeture
+  }
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current)
+      }
+    }
+  }, [])
+
+  return (
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+      <nav className="container-custom">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2 group">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-800 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
+              <span className="text-white font-bold text-xl">NK</span>
+            </div>
+            <span className="font-display text-2xl font-bold text-neutral-900">
+              NK&Co
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <Link href="/" className="text-neutral-700 hover:text-primary-600 font-medium transition-colors">
+              Accueil
+            </Link>
+            
+            <div 
+              className="relative"
+              onMouseEnter={handleServicesMouseEnter}
+              onMouseLeave={handleServicesMouseLeave}
+            >
+              <button 
+                className="flex items-center space-x-1 text-neutral-700 hover:text-primary-600 font-medium transition-colors"
+              >
+                <span>Services</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              {servicesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl py-4 animate-fade-in">
+                  <Link href="/services/financement" className="block px-6 py-3 hover:bg-primary-50 transition-colors">
+                    <div className="font-semibold text-neutral-900">💰 Assistance en financement</div>
+                    <div className="text-sm text-neutral-600">Solutions adaptées à vos besoins</div>
+                  </Link>
+                  <Link href="/services/investissement" className="block px-6 py-3 hover:bg-primary-50 transition-colors">
+                    <div className="font-semibold text-neutral-900">📈 Conseils en investissements</div>
+                    <div className="text-sm text-neutral-600">Stratégies personnalisées</div>
+                  </Link>
+                  <Link href="/services/commerce" className="block px-6 py-3 hover:bg-primary-50 transition-colors">
+                    <div className="font-semibold text-neutral-900">🏪 Financement commercial</div>
+                    <div className="text-sm text-neutral-600">Pour votre activité</div>
+                  </Link>
+                  <Link href="/services/immobilier" className="block px-6 py-3 hover:bg-primary-50 transition-colors">
+                    <div className="font-semibold text-neutral-900">🏠 Financement immobilier</div>
+                    <div className="text-sm text-neutral-600">Tous types de projets</div>
+                  </Link>
+                  <Link href="/services/conseil" className="block px-6 py-3 hover:bg-primary-50 transition-colors">
+                    <div className="font-semibold text-neutral-900">🎯 Conseil & stratégie</div>
+                    <div className="text-sm text-neutral-600">Organisation et développement</div>
+                  </Link>
+                  <div className="border-t mt-2 pt-2">
+                    <Link href="/services" className="block px-6 py-2 text-primary-600 font-semibold hover:bg-primary-50">
+                      Voir tous nos services →
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <Link href="/contact" className="text-neutral-700 hover:text-primary-600 font-medium transition-colors">
+              Contact
+            </Link>
+            
+            <Link href="/rendez-vous" className="btn-primary">
+              Prendre RDV
+            </Link>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="lg:hidden p-2 text-neutral-700 hover:text-primary-600"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden py-4 animate-slide-down">
+            <div className="flex flex-col space-y-4">
+              <Link href="/" className="text-neutral-700 hover:text-primary-600 font-medium px-4 py-2">
+                Accueil
+              </Link>
+              <Link href="/services" className="text-neutral-700 hover:text-primary-600 font-medium px-4 py-2">
+                Services
+              </Link>
+              <Link href="/contact" className="text-neutral-700 hover:text-primary-600 font-medium px-4 py-2">
+                Contact
+              </Link>
+              <Link href="/rendez-vous" className="btn-primary mx-4">
+                Prendre RDV
+              </Link>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  )
+}
+====== src/data/clientele.ts ======
+export interface ClientProfile {
+  id: string
+  title: string
+  description: string
+  icon: string
+  specificNeeds: string[]
+  solutions: string[]
+  advantages: string[]
+}
+
+export const clienteles: ClientProfile[] = [
+  {
+    id: 'pme',
+    title: 'PME / PMI',
+    description: 'Accompagnement des petites et moyennes entreprises dans leur développement',
+    icon: '🏭',
+    specificNeeds: [
+      'Financement de la croissance',
+      'Trésorerie et besoin en fonds de roulement',
+      'Investissements matériels et immatériels',
+      'Acquisition ou transmission d\'entreprise',
+      'Optimisation de la structure financière',
+    ],
+    solutions: [
+      'Crédit professionnel adapté',
+      'Facilités de caisse et découverts',
+      'Crédit-bail et location financière',
+      'Levée de fonds et private equity',
+      'Conseil en stratégie financière',
+    ],
+    advantages: [
+      'Expertise sectorielle reconnue',
+      'Délais de traitement rapides',
+      'Accompagnement personnalisé',
+      'Réseau bancaire étendu',
+    ],
+  },
+  {
+    id: 'salaries',
+    title: 'Salariés du Privé',
+    description: 'Solutions financières adaptées aux salariés pour leurs projets personnels',
+    icon: '👔',
+    specificNeeds: [
+      'Acquisition résidence principale',
+      'Investissement locatif',
+      'Travaux et rénovation',
+      'Constitution d\'un patrimoine',
+      'Rachat de crédits',
+    ],
+    solutions: [
+      'Prêt immobilier avantageux',
+      'Crédit consommation',
+      'Prêt travaux',
+      'Placement et épargne',
+      'Assurance et prévoyance',
+    ],
+    advantages: [
+      'Taux préférentiels négociés',
+      'Assurance emprunteur optimisée',
+      'Accompagnement de A à Z',
+      'Conseil patrimonial gratuit',
+    ],
+  },
+  {
+    id: 'fonctionnaires',
+    title: 'Fonctionnaires',
+    description: 'Offres privilégiées pour les agents de la fonction publique',
+    icon: '🏛️',
+    specificNeeds: [
+      'Accession à la propriété',
+      'Investissement immobilier',
+      'Prêts spéciaux fonctionnaires',
+      'Préparation de la retraite',
+      'Protection du patrimoine',
+    ],
+    solutions: [
+      'Prêt fonctionnaire à taux bonifié',
+      'Garantie mutuelle fonction publique',
+      'Prêt relais et pont',
+      'Plans d\'épargne dédiés',
+      'Assurances groupe',
+    ],
+    advantages: [
+      'Conditions exceptionnelles',
+      'Garanties simplifiées',
+      'Frais réduits',
+      'Sécurité de l\'emploi valorisée',
+    ],
+  },
+  {
+    id: 'commercants',
+    title: 'Petits Commerçants',
+    description: 'Soutien financier pour les commerçants et artisans',
+    icon: '🛒',
+    specificNeeds: [
+      'Achat de fonds de commerce',
+      'Financement de stock',
+      'Équipement professionnel',
+      'Travaux d\'aménagement',
+      'Développement de l\'activité',
+    ],
+    solutions: [
+      'Crédit professionnel commerce',
+      'Ligne de crédit renouvelable',
+      'Leasing d\'équipement',
+      'Micro-crédit professionnel',
+      'Accompagnement business plan',
+    ],
+    advantages: [
+      'Compréhension des métiers',
+      'Flexibilité des remboursements',
+      'Conseil en gestion',
+      'Aides et subventions',
+    ],
+  },
+]
+
+export function getClienteleById(id: string): ClientProfile | undefined {
+  return clienteles.find(client => client.id === id)
+}
+
+====== src/data/services.ts ======
+export interface Service {
+  id: string
+  title: string
+  description: string
+  icon: string
+  details: string[]
+  benefits: string[]
+  targetClients: string[]
+}
+
+export const services: Service[] = [
+  {
+    id: 'financement',
+    title: 'Assistance en Financement',
+    description: 'Solutions de financement adaptées à vos besoins professionnels et personnels',
+    icon: '💰',
+    details: [
+      'Étude de votre capacité d\'emprunt',
+      'Recherche des meilleures conditions de crédit',
+      'Négociation avec les établissements bancaires',
+      'Montage complet de votre dossier',
+      'Accompagnement jusqu\'à l\'obtention des fonds',
+    ],
+    benefits: [
+      'Gain de temps considérable',
+      'Accès à des taux préférentiels',
+      'Dossier solide et complet',
+      'Expertise bancaire reconnue',
+    ],
+    targetClients: ['PME', 'Salariés', 'Fonctionnaires', 'Commerçants'],
+  },
+  {
+    id: 'investissement',
+    title: 'Conseils en Investissements',
+    description: 'Stratégies d\'investissement personnalisées pour faire fructifier votre patrimoine',
+    icon: '📈',
+    details: [
+      'Analyse de votre situation patrimoniale',
+      'Définition de vos objectifs d\'investissement',
+      'Sélection des supports adaptés à votre profil',
+      'Diversification et optimisation fiscale',
+      'Suivi régulier de vos investissements',
+    ],
+    benefits: [
+      'Rendement optimisé',
+      'Risques maîtrisés',
+      'Fiscalité optimisée',
+      'Vision long terme',
+    ],
+    targetClients: ['PME', 'Salariés', 'Fonctionnaires'],
+  },
+  {
+    id: 'commerce',
+    title: 'Financement des Activités Commerciales',
+    description: 'Financements dédiés au développement de votre activité commerciale',
+    icon: '🏪',
+    details: [
+      'Crédit professionnel pour fonds de commerce',
+      'Financement de stock et trésorerie',
+      'Matériel et équipement professionnel',
+      'Rachat ou création d\'activité',
+      'Développement et expansion',
+    ],
+    benefits: [
+      'Solutions sur-mesure',
+      'Délais rapides',
+      'Accompagnement projet',
+      'Expertise métier',
+    ],
+    targetClients: ['PME', 'Commerçants'],
+  },
+  {
+    id: 'immobilier-principal',
+    title: 'Financement Immobilier - Résidence Principale',
+    description: 'Concrétisez votre projet d\'acquisition de résidence principale',
+    icon: '🏠',
+    details: [
+      'Financement jusqu\'à 110% avec frais de notaire',
+      'Prêt à taux zéro (PTZ) si éligible',
+      'Prêt Action Logement',
+      'Assurance emprunteur optimisée',
+      'Garanties adaptées (hypothèque, caution)',
+    ],
+    benefits: [
+      'Meilleurs taux du marché',
+      'Assurance competitive',
+      'Conseil impartial',
+      'Rapidité de traitement',
+    ],
+    targetClients: ['Salariés', 'Fonctionnaires', 'Commerçants'],
+  },
+  {
+    id: 'immobilier-secondaire',
+    title: 'Financement Immobilier - Résidence Secondaire',
+    description: 'Financez votre résidence de vacances ou pied-à-terre',
+    icon: '🏖️',
+    details: [
+      'Apport minimum de 10 à 20%',
+      'Durée de remboursement flexible',
+      'Possibilité de location saisonnière',
+      'Conseil sur la rentabilité',
+      'Optimisation de votre plan de financement',
+    ],
+    benefits: [
+      'Patrimoine diversifié',
+      'Revenus complémentaires',
+      'Avantages fiscaux possibles',
+      'Projet familial sécurisé',
+    ],
+    targetClients: ['Salariés', 'Fonctionnaires', 'PME'],
+  },
+  {
+    id: 'immobilier-locatif',
+    title: 'Financement Immobilier Locatif',
+    description: 'Investissement locatif pour se constituer un patrimoine rentable',
+    icon: '🏢',
+    details: [
+      'Financement jusqu\'à 90% du bien',
+      'Prise en compte des loyers futurs',
+      'Dispositifs fiscaux (Pinel, Denormandie, LMNP)',
+      'Étude de rentabilité complète',
+      'Gestion locative et fiscale',
+    ],
+    benefits: [
+      'Revenus passifs réguliers',
+      'Réduction d\'impôts',
+      'Constitution de patrimoine',
+      'Préparation retraite',
+    ],
+    targetClients: ['Salariés', 'Fonctionnaires', 'PME', 'Commerçants'],
+  },
+  {
+    id: 'organisation',
+    title: 'Conseils en Organisation',
+    description: 'Optimisation de l\'organisation et des processus de votre entreprise',
+    icon: '⚙️',
+    details: [
+      'Audit organisationnel complet',
+      'Optimisation des processus internes',
+      'Mise en place d\'outils de gestion',
+      'Formation des équipes',
+      'Amélioration de la productivité',
+    ],
+    benefits: [
+      'Efficacité accrue',
+      'Réduction des coûts',
+      'Meilleure coordination',
+      'Croissance maîtrisée',
+    ],
+    targetClients: ['PME', 'Commerçants'],
+  },
+  {
+    id: 'strategie',
+    title: 'Conseils en Stratégie',
+    description: 'Accompagnement stratégique pour le développement de votre entreprise',
+    icon: '🎯',
+    details: [
+      'Définition de votre stratégie de croissance',
+      'Analyse de marché et positionnement',
+      'Plan de développement commercial',
+      'Stratégie d\'investissement',
+      'Gestion des risques',
+    ],
+    benefits: [
+      'Vision claire',
+      'Décisions éclairées',
+      'Croissance pérenne',
+      'Avantage concurrentiel',
+    ],
+    targetClients: ['PME', 'Commerçants'],
+  },
+]
+
+export function getServiceById(id: string): Service | undefined {
+  return services.find(service => service.id === id)
+}
+
+export function getServicesByClientType(clientType: string): Service[] {
+  return services.filter(service => 
+    service.targetClients.includes(clientType)
+  )
+}
+
+====== src/types/appointment.ts ======
+export type AppointmentStatus = 'PENDING' | 'CONFIRMED' | 'RESCHEDULED' | 'CANCELLED' | 'COMPLETED'
+export type ServiceType = 'FINANCEMENT' | 'INVESTISSEMENT' | 'COMMERCE' | 'IMMOBILIER_PRINCIPAL' | 'IMMOBILIER_SECONDAIRE' | 'IMMOBILIER_LOCATIF' | 'ORGANISATION' | 'STRATEGIE'
+export type ClientType = 'PME' | 'SALARIE' | 'FONCTIONNAIRE' | 'COMMERCANT'
+
+export interface Appointment {
+  id: string
+  firstName: string
+  lastName: string
+  email: string
+  phone: string
+  company?: string
+  service: ServiceType
+  clientType: ClientType
+  message?: string
+  date: Date
+  timeSlot: string
+  status: AppointmentStatus
+  adminNotes?: string
+  createdAt: Date
+  updatedAt: Date
+}
+
+export interface AppointmentFormData {
+  firstName: string
+  lastName: string
+  email: string
+  phone: string
+  company?: string
+  service: ServiceType
+  clientType: ClientType
+  message?: string
+  date: Date
+  timeSlot: string
+}
+
+export interface TimeSlot {
+  time: string
+  available: boolean
+}
+
+export const SERVICE_LABELS: Record<ServiceType, string> = {
+  FINANCEMENT: 'Assistance en financement',
+  INVESTISSEMENT: 'Conseils en investissements',
+  COMMERCE: 'Financement des activités commerciales',
+  IMMOBILIER_PRINCIPAL: 'Financement immobilier - Résidence principale',
+  IMMOBILIER_SECONDAIRE: 'Financement immobilier - Résidence secondaire',
+  IMMOBILIER_LOCATIF: 'Financement immobilier locatif',
+  ORGANISATION: 'Conseils en organisation',
+  STRATEGIE: 'Conseils en stratégie',
+}
+
+export const CLIENT_TYPE_LABELS: Record<ClientType, string> = {
+  PME: 'PME / PMI',
+  SALARIE: 'Salarié du privé',
+  FONCTIONNAIRE: 'Fonctionnaire',
+  COMMERCANT: 'Petit commerçant',
+}
+
+export const STATUS_LABELS: Record<AppointmentStatus, string> = {
+  PENDING: 'En attente',
+  CONFIRMED: 'Confirmé',
+  RESCHEDULED: 'Reprogrammé',
+  CANCELLED: 'Annulé',
+  COMPLETED: 'Terminé',
+}
+
+export const STATUS_COLORS: Record<AppointmentStatus, string> = {
+  PENDING: 'bg-yellow-100 text-yellow-800',
+  CONFIRMED: 'bg-green-100 text-green-800',
+  RESCHEDULED: 'bg-blue-100 text-blue-800',
+  CANCELLED: 'bg-red-100 text-red-800',
+  COMPLETED: 'bg-gray-100 text-gray-800',
+}
+
+// Créneaux horaires disponibles (9h-18h, créneaux de 30min)
+export const AVAILABLE_TIME_SLOTS = [
+  '09:00', '09:30', '10:00', '10:30', '11:00', '11:30',
+  '12:00', '12:30', '13:00', '13:30', '14:00', '14:30',
+  '15:00', '15:30', '16:00', '16:30', '17:00', '17:30',
+]
